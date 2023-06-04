@@ -36,7 +36,7 @@ cursor = conexao.cursor()
 #     {'id':6}
 # )
 # conexao.commit()
-
+#
 
 
 
