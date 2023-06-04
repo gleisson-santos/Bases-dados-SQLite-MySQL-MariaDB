@@ -31,19 +31,17 @@ cursor.execute('CREATE TABLE IF NOT EXISTS clientes ('
 # conexao.commit()
 
 # EXCLUINDO DADOS
-# cursor.execute(
-#     'DELETE FROM clientes WHERE id=:id',
-#     {'id':6}
-# )
-# conexao.commit()
-#
+cursor.execute(
+    'DELETE FROM clientes WHERE id=:id',
+    {'id': 9}
+)
+conexao.commit()
 
 
-cursor.execute('SELECT nome, peso FROM clientes WHERE peso > 50')
+cursor.execute('SELECT id, nome, peso FROM clientes WHERE peso > 50')
 
 for linha in cursor.fetchall():
-    nome, peso = linha
-
+    # nome, peso = linha
     # print(nome, peso)
     print(linha)
 
