@@ -31,11 +31,11 @@ cursor.execute('CREATE TABLE IF NOT EXISTS clientes ('
 # conexao.commit()
 
 # EXCLUINDO DADOS
-cursor.execute(
-    'DELETE FROM clientes WHERE id=:id',
-    {'id': 9}
-)
-conexao.commit()
+# cursor.execute(
+#     'DELETE FROM clientes WHERE id=:id',
+#     {'id': 9}
+# )
+# conexao.commit()
 
 
 cursor.execute('SELECT id, nome, peso FROM clientes WHERE peso > 50')
