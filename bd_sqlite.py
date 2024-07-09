@@ -28,11 +28,11 @@ cursor.execute('CREATE TABLE IF NOT EXISTS clientes ('
 
 #Modo UPDATE
 # ATUALIZANDO DADOS PELO ID
-# cursor.execute(
-#     'UPDATE clientes SET nome=:nome WHERE id=:id',
-#     {'nome': 'Joana', 'id':6}
-# )
-# conexao.commit()
+cursor.execute(
+    'UPDATE clientes SET nome=:nome WHERE id=:id',
+    {'nome': 'Xerife', 'id':1}
+)
+conexao.commit()
 
 #Modo DELETE
 # EXCLUINDO DADOS
